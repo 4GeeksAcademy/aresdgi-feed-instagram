@@ -1,90 +1,217 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/a37cf2f924.js" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    
-  </head>
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bootstrap demo</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://kit.fontawesome.com/a37cf2f924.js" crossorigin="anonymous"></script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+
+
+<div class="container-fluid "> 
   <nav class="navbar navbar-expand-md bg-body-tertiary">
-    <div class="container-fluid ">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+	
 
-      
-      <div class="collapse navbar-collapse"  id="navbarTogglerDemo01">
-        <div class="collapse navbar-collapse"  id="navbarTogglerDemo01">
-        <a class="navbar-brand" href="#">Instagram</a>
-
-        <ul class="navbar-nav ms-auto pe-2">
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
 
+<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+    <i class="bi bi-instagram p-2" style="font-size: 25px;"></i>
+    <a class="navbar-brand" href="#"><h1>Instagram</h1>
 
-          <!-- Modal -->
+    <ul class="navbar-nav ms-auto pe-2">
 
-            
-            
-            <button type="button" class="btn btn-success m-1" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Create a new post</button>
-            
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-                    <form>
-                    
-                      <div class="mb-3">
-                        <label for="message-text" class="col-form-label text-dark">Caption:</label>
-                        <textarea class="form-control" id="message-text"></textarea>
-                      </div>
-                    </form>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-success">Publish</button>
-                  </div>
-                </div>
-              </div>
+      <!-- Modal -->
+      <button type="button" class="btn btn-success m-1" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Create a new post</button>
+
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-
-          <!-- Dropdown -->
-
-          <div class="dropdown m-1">
-            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="true">
-              <i class="fa-solid fa-gear"></i>
-            </button>
-            <ul class="dropdown-menu dropdown-menu-end  dropdown-menu-light ">
-              <li><a class="dropdown-item active" href="#">Profile</a></li>
-              <li><a class="dropdown-item" href="#">Accesibility</a></li>
-              <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
-            </ul>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="message-text" class="col-form-label text-dark">Caption:</label>
+                  <textarea class="form-control" id="message-text"></textarea>
+                </div>
+              </form>
+              <button type="button" class="btn btn-secondary"> <i class="bi bi-camera"></i>
+              </button>
+              <button type="button" class="btn btn-secondary"> <i class="bi bi-geo-alt-fill"></i>
+              </button>
+              
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-success">Publish</button>
+            </div>
           </div>
+        </div>
+      </div>
+    </a>
+
+    
+
+      <!-- Dropdown -->
+
+      <div class="dropdown m-2">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="fa-solid fa-gear"></i>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end  dropdown-menu-light">
+          <li><a class="dropdown-item" href="#">Profile</a></li>
+          <li><a class="dropdown-item" href="#">Accesibility</a></li>
+          <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+          <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
         </ul>
       </div>
-    </div>
-  </nav>
-
+    </ul>
 
   
-<ul class="nav justify-content-center m-3">
-  <li class="nav-item">
-    <a class="nav-link active" aria-current="page" href="#">Active</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">Link</a>
-  </li>
-</ul>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-  </body>
+    
+
+  </div>
+  </div>
+</nav>
+
+
+<!--Nav & tab-->
+
+        <ul class="nav nav-tabs m-1 justify-content-center" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"><i class="bi bi-grid-3x3"></i></button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false"><i class="bi bi-square-fill"></i></button>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">  
+
+
+            <div class="row g-3 justify-content-center">
+              <div class=" col-lg-4 col-md-4 col-sm-6 col-xs-12 mb-1">
+                <img src="Photos/8d8114ddbcb7a28080b420a07a6247ed.jpg" alt="porsche" class="img-fluid fotos ">
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 mb-1">
+                <img src="Photos/da405d83b70704f893ed72c49a125d8c.jpg" alt="porsche" class="img-fluid fotos">
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 mb-1">
+                <img src="Photos/8da573b69498901abdbfc12d16006800.jpg" alt="porsche" class="img-fluid fotos">
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 mb-1">
+                <img src="images/nirvana.jpg" alt="porsche" class="img-fluid fotos ">
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 mb-1">
+                <img src="images/cadiz.jpg" alt="porsche" class="img-fluid fotos">
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 mb-1">
+                <img src="images/faro.jpg" alt="porsche" class="img-fluid fotos">
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 mb-1">
+                <img src="images/r2d2.jpg" alt="porsche" class="img-fluid fotos ">
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 mb-1">
+                <img src="images/soobey.jpg" alt="porsche" class="img-fluid fotos">
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 mb-1">
+                <img src="images/totoro2.jpg"porsche" class="img-fluid fotos">
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">  
+
+            <!--Feed-->
+
+            <div class="row">
+              <div class=" col-10 col-lg-4 card mx-auto mt-3 ">
+                <div class="  p-3 justify-content-between d-flex">
+                   <h2 fs-2>My new car! ;)</h2>
+                   <h5 fs-5>13/05</h5>
+                 </div>
+             
+                 <img src="Photos/8d8114ddbcb7a28080b420a07a6247ed.jpg" class="img-fluid">
+             
+                 <p class="px-3 pt-3"><b><span class="likes-count">13059</span> likes</b></p>
+                 <p class="px-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui voluptatem, sed tempora nam facere repellendus tempore distinctio incidunt expedita praesentium asperiores esse, alias id vel ipsum dolorum cum, ratione voluptatibus?</p>
+             </div>
+            </div>
+  
+            <div class="row">
+              <div class=" col-10 col-lg-4 card mx-auto mt-3 ">
+                <div class="  p-3 justify-content-between d-flex">
+                   <h2 fs-2>I have a dream...</h2>
+                   <h5 fs-5>13/05</h5>
+                 </div>
+             
+                 <img src="Photos/da405d83b70704f893ed72c49a125d8c.jpg" class="img-fluid">
+             
+                 <p class="px-3 pt-3"><b><span class="likes-count">13059</span> likes</b></p>
+                 <p class="px-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui voluptatem, sed tempora nam facere repellendus tempore distinctio incidunt expedita praesentium asperiores esse, alias id vel ipsum dolorum cum, ratione voluptatibus?</p>
+             </div>
+            </div>
+  
+            <div class="row">
+              <div class=" col-10 col-lg-4 card mx-auto mt-3 ">
+                <div class="  p-3 justify-content-between d-flex">
+                   <h2 fs-2>Totoro!</h2>
+                   <h5 fs-5>13/05</h5>
+                 </div>
+             
+                 <img src="Photos/8da573b69498901abdbfc12d16006800.jpg" class="img-fluid">
+             
+                 <p class="px-3 pt-3"><b><span class="likes-count">13059</span> likes</b></p>
+                 <p class="px-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui voluptatem, sed tempora nam facere repellendus tempore distinctio incidunt expedita praesentium asperiores esse, alias id vel ipsum dolorum cum, ratione voluptatibus?</p>
+             </div>
+            </div>
+  
+
+          </div>
+        </div>
+
+        
+
+
+
+
+      </div>
+          
+
+
+      
+        
+        
+
+
+        
+        
+
+          
+
+
+        
+
+          
+          
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
 </html>
